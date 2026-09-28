@@ -1,0 +1,221 @@
+{
+  "name": "lf-engine",
+  "version": "2026-09-28",
+  "display_name": "翎风引擎（LF）事实与脚本规范",
+  "description": "翎风引擎（LF 引擎，传奇 Mir2 商业端）服务端的事实与脚本开发规范：查脚本命令/触发器/变量/数据库字段、确认文件该放哪、改完怎么让它生效；纪律是「先查说明书与真实服务端文件，禁止凭记忆编造引擎事实」。",
+  "author": "zjl",
+  "keywords": [
+    "翎风",
+    "LF引擎",
+    "传奇",
+    "Mir2",
+    "服务端脚本",
+    "脚本命令",
+    "触发器",
+    "变量",
+    "StdItems",
+    "Monster",
+    "Magic",
+    "Envir",
+    "重载",
+    "GM命令",
+    "说明书"
+  ],
+  "triggers": {
+    "auto_suggest": true,
+    "context_hints": [
+      "写传奇脚本",
+      "改NPC脚本",
+      "查脚本命令语法",
+      "物品数据库字段",
+      "触发器标签",
+      "改完怎么重载生效",
+      "QFunction",
+      "QuestDiary"
+    ]
+  },
+  "data_sources": [
+    {
+      "data_type": "markdown",
+      "path": "data/00-导航.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/00-手册检索与覆盖边界-01-0.当前基线：2026-07-08版.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-01-引言与定位.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-02-2.变量体系.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-03-2.变量体系.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-04-3.1主命令目录.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-05-3.1主命令目录.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-06-3.2兼容HeroM2功能操作命令.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-07-4.IF检测命令总表.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-08-5.重点命令详解.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-09-6.未验证存疑.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/01-脚本命令-10-附：本笔记的核查记录.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/02-触发功能-01-引言与定位.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/02-触发功能-02-1.触发总表.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/02-触发功能-03-1.触发总表.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/02-触发功能-04-2.13地图事件触发.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/02-触发功能-05-2.22其余页面的原文照抄.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/02-触发功能-06-3.存放位置与命名规律.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/03-配置与数据库-01-引言与定位.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/03-配置与数据库-02-2.Stditem.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/03-配置与数据库-03-3.Monster.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/03-配置与数据库-04-7.地图参数.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/04-功能详解-01-引言与定位.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/04-功能详解-02-二、怪物相关.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/04-功能详解-03-三、物品相关.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/04-功能详解-04-四、NPC界面与对话框相关.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/04-功能详解-05-六、活动与系统相关.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/05-常见问题-01-1.不能自动解包.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/06-其它资料-01-引言与定位.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/06-其它资料-02-五、国家国战系统.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/08-2026-07-08增量-01-引言与定位.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/08-2026-07-08增量-02-1.对应01-脚本命令.md.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/08-2026-07-08增量-03-2.对应02-触发功能.md.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/08-2026-07-08增量-04-4.对应04-功能详解.md.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/08-2026-07-08增量-05-5.对应06-其它资料.md，并含部分脚本实.md",
+      "description": "说明书提炼索引分片"
+    },
+    {
+      "data_type": "markdown",
+      "path": "data/09-控制台重载与菜单-01-1.为什么需要这份：改完脚本不算完，生效是独.md",
+      "description": "说明书提炼索引分片"
+    }
+  ],
+  "requires_tools": [],
+  "conflicts": []
+}
