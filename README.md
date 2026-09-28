@@ -20,4 +20,14 @@ plugin 根：`<nuphus 安装目录>\plugin\skills\community\lf-engine\`。
 - `data/` — 说明书提炼索引分片（`skill_query` 只搜这里）
 - `manual/` — 说明书原文镜像（**不入库**，另经 SSH 放置；不参与 `skill_query`）
 
+## 更新流程
+
+源在 `mir-gm` 工作区（那边是 DSH 技能目录），本仓库只是它的 nuphus 版产物：
+
+1. 改 `mir-gm` 里的源；
+2. 跑生成器 `build-nuphus-skills.py`；
+3. 跑发布脚本 `publish-nuphus-skills.sh`（同步 + 提交 + 推送本仓库）；
+4. 在装了本技能的机器上拉取同步：`.150` 上是 `C:\Users\9900k\nuphus-skills\sync-skills.ps1`；
+5. nuphus 的技能页/新会话会实时扫描，**不需要重启**。
+
 生成日期：2026-09-28
